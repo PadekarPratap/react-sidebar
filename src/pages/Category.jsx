@@ -4,7 +4,7 @@ import { AppContext } from '../components/Sidebar'
 const Categories = () => {
 
   const {isOpen} = useContext(AppContext)
-
+  
   return (
     <div
     style={{

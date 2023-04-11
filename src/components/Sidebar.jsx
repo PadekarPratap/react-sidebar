@@ -58,7 +58,9 @@ const Sidebar = ({ children }) => {
         {/* list  */}
         <div>
           <ul className="space-y-8 flex flex-col mt-8">
-            <li role="button" onClick={() => navigate('/')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group">
+            <li role="button" onClick={() => navigate('/')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" style={{
+              backgroundColor: window.location.pathname === "/" && "#009688"
+            }} >
               <MdDashboard size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
@@ -75,7 +77,9 @@ const Sidebar = ({ children }) => {
                 Dashboard
               </p>
             </li>
-            <li role="button" onClick={() => navigate('/products')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" to={"/products"}>   
+            <li role="button" onClick={() => navigate('/products')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" to={"/products"} style={{
+              backgroundColor: window.location.pathname === "/products" && "#009688"
+            }} >   
               <BsFillBagFill size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
@@ -92,7 +96,9 @@ const Sidebar = ({ children }) => {
                 Products
               </p>
             </li>
-            <li role="button" onClick={() => navigate('/categories')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group">
+            <li role="button" onClick={() => navigate('/categories')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" style={{
+              backgroundColor: window.location.pathname === "/categories" && "#009688"
+            }} >
               <BiCategory size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
@@ -109,7 +115,9 @@ const Sidebar = ({ children }) => {
                 Categories
               </p>
             </li>
-            <li role="button" onClick={() => navigate('/orders')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group">
+            <li role="button" onClick={() => navigate('/orders')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" style={{
+              backgroundColor: window.location.pathname === "/orders" && "#009688"
+            }} >
               <ImBook size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
@@ -126,7 +134,9 @@ const Sidebar = ({ children }) => {
                 Orders
               </p>
             </li>
-            <li role="button" onClick={() => navigate('/customers')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group">
+            <li role="button" onClick={() => navigate('/customers')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" style={{
+              backgroundColor: window.location.pathname === "/customers" && "#009688"
+            }} >
               <VscPerson size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
@@ -143,7 +153,9 @@ const Sidebar = ({ children }) => {
                 Customers
               </p>
             </li>
-            <li role="button" onClick={() => navigate('/shipping')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group">
+            <li role="button" onClick={() => navigate('/shipping')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" style={{
+              backgroundColor: window.location.pathname === "/shipping" && "#009688"
+            }} >
               <BiLocationPlus size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
@@ -160,7 +172,9 @@ const Sidebar = ({ children }) => {
                 Shipping
               </p>
             </li>
-            <li role="button" onClick={() => navigate('/settings')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group">
+            <li role="button" onClick={() => navigate('/settings')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" style={{
+              backgroundColor: window.location.pathname === "/settings" && "#009688"
+            }} >
               <IoSettingsSharp size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
@@ -177,7 +191,9 @@ const Sidebar = ({ children }) => {
                 Settings
               </p>
             </li>
-            <li role="button" onClick={() => navigate('/logout')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group">
+            <li role="button" onClick={() => navigate('/logout')} className="flex items-center gap-5 cursor-pointer hover:bg-white hover:text-black py-2 px-3 rounded-lg group" style={{
+              backgroundColor: window.location.pathname === "/logout" && "#009688"
+            }} >
               <BiLogOut size={25} />
               <h4
                 style={{ display: isOpen ? "block" : "none" }}
